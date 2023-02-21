@@ -5,58 +5,437 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>shop card</title>
-  <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <article class="product">
-    <a href="#" class="product__image">
-      <div class="product__switch image-switch">
-        <div class="image-switch__item">
-          <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
-        </div>
-        <div class="image-switch__item">
-          <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
-        </div>
-        <div class="image-switch__item">
-          <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+  <div class="container">
+    <div class="products-content grid-container">
+      <div class="filters">
+        <div class="filters__item filters-price">
+          <h3 class="filters-price__title">Цена</h3>
+          <div class="filters-price__slider"></div>
+          <div class="filters-price__inputs">
+            <input type="text" class="filters-price__input">
+            <input type="text" class="filters-price__input">
+          </div>
         </div>
       </div>
 
-      <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
-    </a> <!-- /product__image -->
 
-    <h3 class="product__title">
-      <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
-    </h3>
+      <ul class="products-grid">
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
 
-    <div class="product__props">
-      <span class="product__rating">
-        <img src="assets/images/Star 1.svg" alt="">
-        4.5
-      </span>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
 
-      <span class="product__testimonials">83 отзыва</span>
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+        <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-2.jpg" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="assets/images/macbook-3.jpg" alt="Макбук"></div>
+                </div>
+              </div>
+
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a> <!-- /product__image -->
+
+            <h3 class="product__title">
+              <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+            </h3>
+
+            <div class="product__props">
+              <span class="product__rating">
+                <img src="assets/images/Star 1.svg" alt="">
+                4.5
+              </span>
+
+              <span class="product__testimonials">83 отзыва</span>
+            </div>
+
+            <div class="product__info">
+              <span class="product__term">Артикул: 879876</span>
+              <span class="product__available">В наличии: 13 шт</span>
+            </div>
+
+            <div class="product__price product-price">
+              <span class="product-proce__current">190 789 ₽</span>
+              <span class="product-price__old">194 578 ₽</span>
+            </div>
+
+            <button class="product__btn">Добавить в корзину</button>
+
+          </article>
+        </li>
+      </ul>
     </div>
-
-    <div class="product__info">
-      <span class="product__term">Артикул: 879876</span>
-      <span class="product__available">В наличии: 13 шт</span>
-    </div>
-
-    <div class="product__price product-price">
-      <span class="product-proce__current">190 789 ₽</span>
-      <span class="product-price__old">194 578 ₽</span>
-    </div>
-
-    <button class="product__btn">Добавить в корзину</button>
-
-  </article>
-
-
+  </div>
+  <div class="height"></div>
   <script src="assets/js/product.js"></script>
+  <script src="assets/js/fixed-block.js"></script>
 </body>
 
 </html>
