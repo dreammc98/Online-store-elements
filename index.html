@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>shop card</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/libs/modal/modal.css">
 </head>
 
 <header class="header">
@@ -35,7 +36,8 @@
               <span>Итого:</span>
               <span class="fullprice">190 789 ₽</span>
             </div>
-            <button class="cart-content__btn btn">Перейти в корзину</button>
+            <button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp">Перейти в
+              корзину</button>
           </div>
 
         </div>
@@ -471,11 +473,59 @@
     </div>
   </main>
 
+  <div class="modal">
+    <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+      <div class="modal-content order-modal__content">
+        <div class="order-modal__top">
+          <h3 class="order-modal__title">Оформление заказа</h3>
+          <span class="order-modal-nubmer">Заказ № 3456 67</span>
+        </div>
+        <div class="order-modal__info">
+          <div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span>3 шт</span></div>
+          <div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span>568 789 ₽</span></div>
+          <div class="order-modal__products order-modal__info-item">
+            <button class="order-modal__btn">Состав заказа</button>
+            <ul class="order-product__list">
+              <!--<li class="order-product__item">
+                <article class="order-product__product">
+                  <img src="assets/images/macbook.jpg" alt="" class="order-product__img">
+                  <div class="order-product__text">
+                    <h3 class="order-product__title">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</h3>
+                    <span class="order-product__price">190 789 ₽</span>
+                  </div>
+                  <button class="order-product__delete">Удалить</button>
+                </article>
+              </li>-->
+            </ul>
+          </div>
+        </div>
+        <form action="#" class="order-modal__form order">
+          <label class="order__label">
+            <span class="order__text">Ваше имя</span>
+            <input type="text" name="Имя" class="order__input">
+          </label>
+
+          <label class="order__label">
+            <span class="order__text">Номер телефона</span>
+            <input type="text" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
+          </label>
+
+          <label class="order__label">
+            <span class="order__text">Электронная почта</span>
+            <input type="email" name="email" class="order__input" placeholder="post@gmail.com">
+          </label>
+          <button class="order__btn btn">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <div class="height"></div>
-  <script src="assets/js/cart.js"></script>
   <script src="assets/js/simplebar.js"></script>
+  <script src="assets/libs/modal/modal.js"></script>
   <script src="assets/js/product.js"></script>
   <script src="assets/js/fixed-block.js"></script>
+  <script src="assets/js/cart.js"></script>
 </body>
 
 </html>
